@@ -1,0 +1,62 @@
+This file contains information on creating a database for the Electricity Billing System project. It's assumed that this process is performed at MySQL command line.
+Tasks:
+1. Create Database
+SQL Command: 
+create database ebs;
+2. Switch to the ebs database just created
+SQL Command:
+use ebs;
+3. Create login table
+SQL Command:
+create table login (
+    meter_no varchar(255),
+    username varchar(255),
+    name varchar(255),
+    password varchar(255),
+    user varchar(255)
+);
+4. Create customer table
+SQL Command:
+create table customer (
+    name varchar(255),
+    meter varchar(255),
+    address varchar(255),
+    city varchar(255),
+    state varchar(255),
+    email varchar(255),
+    phone varchar(255)
+);
+5. Create meter information table
+SQL Command:
+create table meter_info (
+    meter_number varchar(255),
+    meter_location varchar(255),
+    meter_type varchar(255),
+    phase_code varchar(255),
+    bill_type varchar(255),
+    days varchar(255)
+);
+6. Create tax table
+SQL Command:
+create table tax (
+    cost_per_unit varchar(255),
+    meter_rent varchar(255),
+    service_charge varchar(255),
+    service_tax varchar(255),
+    swacch_bharat_cess varchar(255),
+    fixed_tax varchar(255)
+);
+7. Insert values into tax table
+SQL Command:
+insert into tax 
+values ('9','47','22','57','6','18'); 
+8. Create bill table
+SQL Command:
+create table bill (
+    meter varchar(255),
+    month varchar(255),
+    units varchar(255),
+    total_bill varchar(255),
+    status varchar(255)
+);
+
