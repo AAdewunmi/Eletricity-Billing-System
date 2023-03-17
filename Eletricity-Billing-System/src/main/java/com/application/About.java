@@ -37,12 +37,12 @@ public class About extends JFrame implements ActionListener {
         setFont(f);
 
         s = "                                    About Projects          \n  "
-                + "\nElectricity Billing System is a software-based application "
-                + "developed in Java programming language. The project aims at serving"
-                + "the department of electricity by computerizing the billing system. "
-                + "It mainly focuses on the calculation of Units consumed during the "
-                + "specified time and the money to be paid to electricity offices. "
-                + "This computerized system will make the overall billing system easy, "
+                + "\nElectricity Billing System is a software-based application \n"
+                + "developed in Java programming language. The project aims at serving\n"
+                + "the department of electricity by computerizing the billing system. \n"
+                + "It mainly focuses on the calculation of Units consumed during the \n"
+                + "specified time and the money to be paid to electricity offices. \n"
+                + "This computerized system will make the overall billing system easy, \n"
                 + "accessible, comfortable and effective for consumers.\n\n"
                 ;
 

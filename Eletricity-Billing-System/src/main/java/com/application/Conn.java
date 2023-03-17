@@ -16,14 +16,14 @@ import java.util.logging.Logger;
  * @author adrianadewunmi
  */
 public class Conn {
-    Connection connection;
-    Statement statement;
+    Connection c;
+    Statement s;
     
     public Conn(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/ebs", "root", "abc");
-            statement = connection.createStatement();
+            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/ebs", "root", "abc");
+            s = c.createStatement();
         } catch (SQLException e) {
             System.out.println("Connection Error: " + e);
         } catch (ClassNotFoundException ex) {
