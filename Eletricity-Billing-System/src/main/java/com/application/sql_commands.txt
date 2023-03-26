@@ -46,11 +46,7 @@ create table tax (
     swacch_bharat_cess varchar(255),
     fixed_tax varchar(255)
 );
-7. Insert values into tax table
-SQL Command:
-insert into tax 
-values ('9','47','22','57','6','18'); 
-8. Create bill table
+7. Create bill table
 SQL Command:
 create table bill (
     meter varchar(255),
@@ -59,4 +55,26 @@ create table bill (
     total_bill varchar(255),
     status varchar(255)
 );
+======================================
+1. Insert values into login table 
+insert into login
+values ('', 'adm1', 'admin1', 'adm123', 'Admin');
 
+insert into login
+values ('844586', 'cust1', 'customer1', 'cust123', 'Customer');
+
+2. Insert values into customer table
+insert into customer
+values ('cust1', '844586', 'ashok nagar', 'ghaziabad', 'Uttar Pradesh', 'customer1@gmail.com', '1234567890');
+
+3. Insert values into bill table
+insert into bill
+values ('844586', 'January', '120', '1230', 'Not Paid');
+
+4. Insert values into meter_info table
+insert into meter_info
+values ('844586', 'Outside', 'Electricity Meter', '011', 'Normal', '30');
+
+5. Insert values into tax table
+insert into tax
+values ('9', '47', '22', '57', '6', '18');
